@@ -76,9 +76,60 @@
 .banner-image{
     width: 100%;
 }
+header{
+    margin-bottom: 85px;
+    
+}
+/* team section */
+main>section{
+    max-width: 1440px;
+    margin:0 auto;
+}
+.Featured{
+ max-width: 537px;
+ margin: 0 auto;
+ /* border: 2px solid black; */
+
+ 
+}
+.feature-heading{
+    font-weight: 700;
+    font-size: 45px;
+    /* border: 2px solid black; */
+
+}
+#quick{
+    font-weight: 500;
+    font-size: 45px;
+    color: rgb(114, 114, 114);
+}
+.team-image-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    margin-right: 4.5rem;
+}
+.container{
+ justify-content: center;
+ align-items: center;
+}
 /* media query */
 @media  screen and (max-width:577px){
  .nav-link ,.navbar{
     flex-direction: column;
- }   
+ }
+ .container{
+    flex-direction: column;
+ }
+ .team-image-section{
+    grid-template-columns: repeat(1,1fr);
+    margin: 0 auto;
+ }
+
+}
+@media screen and (min-width:578px) and (max-width:992px) {
+    .container{
+        flex-direction: column;
+    }
+    
 }
